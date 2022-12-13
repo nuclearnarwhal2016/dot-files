@@ -64,6 +64,11 @@ require("packer").startup(function(use)
 	}
     })
 
+    -- latex support
+    use({"lervag/vimtex"})
+
+    use({"github/copilot.vim"})
+
     if is_bootstrap then
 	require("packer").sync()
     end
